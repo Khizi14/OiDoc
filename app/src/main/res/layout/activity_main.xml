@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    tools:context=".MainActivity"
+    android:background="@drawable/border"
+
+    >
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome To O! DOC"
+            android:padding="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/img1"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="User Name"
+        android:paddingStart="10dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:padding="25dp"
+        android:drawableStart="@android:drawable/radiobutton_off_background"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Password"
+        android:paddingStart="10dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:padding="25dp"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="10dp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:backgroundTint="#02a8e7"
+            android:background="@drawable/button"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign-Up"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#02a8e7"
+            android:background="@drawable/button"
+
+            />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
